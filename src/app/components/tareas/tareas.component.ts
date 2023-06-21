@@ -25,4 +25,8 @@ export class TareasComponent {
   eliminarTarea(index: number){
     this.listaTareas.splice(index, 1);
   }
+
+  actualizarTarea(tarea: Tarea, index: number){
+    this.listaTareas[index].estado = !tarea.estado;
+  }
 }
