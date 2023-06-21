@@ -21,4 +21,8 @@ export class TareasComponent {
     this.listaTareas.push(tarea);
     this.nombreTarea = '';
   }
+
+  eliminarTarea(index: number){
+    this.listaTareas.splice(index, 1);
+  }
 }
